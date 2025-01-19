@@ -22,9 +22,7 @@ jobs:
       - name: Run sccache-cache
         uses: mozilla-actions/sccache-action@v0.0.4
       - name: Load CMake and Ninja
-        uses: lukka/get-cmake@latest
-        with:
-          cmakeVersion: 3.29.5
+        uses: lukka/get-cmake@v3
       - name: Set up directories
         run: "md -Path 'C:\\moon\\randomizer'"
       - name: Extract tag
